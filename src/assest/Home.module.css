@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+.fullHeightGray {
+  background-color: rgb(255, 255, 255) !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+.hhhhho{
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal; 
+}
+.imageRound {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.texttt {
+  font-size: 4rem;
+  color: rgb(9, 9, 9) !important;
+  padding-top: 10%;
+  transition: padding 0.3s ease, font-size 0.3s ease;
+}
+
+.c {
+  color: rgb(9, 9, 9);
+  background-color: rgb(255, 255, 255) !important;
+  padding-top: 60px;
+  position: relative;
+  margin-right: 0;
+  padding-left: 10%;
+}
+
+.textmove {
+  /* Placeholder for any text animation */
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  padding-top: 80px;
+  height: 100vh;
+  position: relative;
+  color: black;
+}
+
+/* Button Styles */
+.cta {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 15px;
+  padding-top: 15px;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #03fe63;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: #03fe63;
+}
+
+/* Optional: Styling for the arrow-icon */
+.arrowIcon {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+  color: #03fe63;
+}
+
+/* Default padding */
+.texttt {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Adjust padding for small screens */
+@media (max-width: 768px) {
+  .texttt {
+    padding-right: 10px;
+    font-size: 3rem; /* Adjust text size on small screens */
+  }
+
+  .c {
+    padding-left: 5%;
+    padding-right: 5%;
+    height: auto; /* Prevent excessive height */
+    padding-bottom: 20%;
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center; /* Center vertically */
+    text-align: center;
+  }
+
+  .pland {
+    font-size: 1.2rem; /* Adjust font size */
+    max-width: 100%; /* Ensure text stays within bounds */
+  }
+
+  .imageRound {
+    width: 80px; /* Smaller size for small screens */
+    height: 80px;
+  }
+
+  .home-container {
+    padding-top: 20px; /* Reduced padding for small screens */
+    height: auto;
+  }
+
+  /* Adjust the button size and icon */
+  .cta span {
+    font-size: 12px; /* Smaller font for buttons */
+  }
+
+  .cta svg {
+    width: 20px;
+    height: 8px;
+  }
+}
+
+/* Service Card Styling */
+.serviceCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.serviceCard h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.serviceCard p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.serviceCard:hover {
+  transform: translateY(-10px); /* Lift the card up */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.serviceCard:hover h3 {
+  color: #03fe63; /* Change text color on hover */
+
+}
+.bbb {
+ /* Red background */
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100%; /* Ensure it takes full height of its container */
+}
+
+/* Home.module.css */
+
+/* Adjust for small screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .texttt {
+    padding-right: 10px;
+    font-size: 3rem; /* Adjust text size for small screens */
+  }
+
+  .c {
+    padding-left: 5%;
+    padding-right: 5%; /* Balance padding */
+    height: auto;
+    padding-bottom: 20%;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    text-align: center;
+  }
+
+  .pland {
+    font-size: 1.2rem; /* Adjust text size for readability */
+    max-width: 100%; /* Ensure text stays within bounds */
+  }
+
+  .imageRound {
+    width: 80px; /* Smaller size for images */
+    height: 80px;
+  }
+
+  .home-container {
+    padding-top: 20px; /* Reduce padding */
+    height: auto; /* Auto height for small screens */
+  }
+
+  /* Adjust the button size and icon */
+  .cta span {
+    font-size: 12px; /* Smaller font for buttons */
+  }
+
+  .cta svg {
+    width: 20px;
+    height: 8px;
+  }
+}
+ 
+
+
+
+/* Styling for the service card */
+.serviceCard {
+  background: #fff; /* Example background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Styling for the icon inside the card */
+.serviceCard i {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for the heading inside the card */
+.serviceCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Styling for the paragraph inside the card */
+.serviceCard p {
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+/* Optional: Add hover effect for service cards */
+.serviceCard:hover {
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05); 
+  transition: transform 0.3s ease-in-out;
+}
+
+.serviceCard:hover h3,
+.serviceCard:hover p {
+  transform: scale(1.05); /* Zoom effect */
+  transition: transform 0.3s ease-in-out;
+}
